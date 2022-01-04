@@ -1,0 +1,32 @@
+<?php
+$webdev_cards = array(
+    array(
+        "cardClass"=>"webdev",
+        "image"=>"https://stephenmiller.hu/webdesign/img/zackchangehu.jpg",
+        "title"=>"zackchange.hu",
+        "desc"=>"Loremipsum",
+        "link"=>"https://segglé.com",
+        "linkname"=>"Hahaha"),
+    array(
+        "cardClass"=>"webdev",
+        "image"=>"https://stephenmiller.hu/webdesign/img/retrorangepiorg.jpg",
+        "title"=>"retrorangepi.org",
+        "desc"=>"Loremipsum",
+        "link"=>"https://segglé.com",
+        "linkname"=>"Hahaha"),
+    array(
+        "cardClass"=>"webdev",
+        "image"=>"https://stephenmiller.hu/webdesign/img/stephenmillerhu.jpg",
+        "title"=>"stephenmiller.hu",
+        "desc"=>"Loremipsum",
+        "link"=>"https://segglé.com",
+        "linkname"=>"Hahaha"),
+    array(
+        "cardClass"=>"webdev",
+        "image"=>"https://stephenmiller.hu/webdesign/img/xboxhungaryhu.jpg",
+        "title"=>"xboxhungary.hu",
+        "desc"=>"Loremipsum",
+        "link"=>"https://segglé.com",
+        "linkname"=>"Hahaha")
+);
+?>

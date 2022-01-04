@@ -1,0 +1,276 @@
+@font-face {
+    font-family: fm-normal;
+    src: url('fonts/FiraMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: fm-bold;
+    src: url('fonts/FiraMono-Bold.ttf') format('truetype');
+}
+
+::selection {
+    background: #86c2326b;
+}
+
+body {
+    background-color: #000000;
+    color: #979797;
+    margin: 0;
+    font-family: monospace;
+    font-size: 1.2em;
+}
+
+#matrixbg {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
+
+.center-ascii {
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    pointer-events: none;
+    z-index: 1000;
+    margin: auto;
+}
+
+.center-ascii pre {
+    margin: auto;
+    margin-right: 0;
+}
+
+.center-ascii .welcome-container {
+    margin: auto;
+    font-weight: bold;
+    width: 460px;
+}
+
+.center-ascii .welcome-container h2 {
+    font-size: 4em;
+    margin: 0;
+}
+
+.center-ascii .welcome-container p {
+    margin: 0;
+    font-size: 2em;
+}
+
+.center-ascii .welcome-container p span {
+    margin-left: 10px;
+    color: #86C232;
+}
+
+#splash {
+    width: 100%;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+#splash .scroll-down-text {
+    text-align: center;
+    width: 100%;
+    bottom: 100px;
+    pointer-events: none;
+    z-index: 1000;
+    height: 25px;
+}
+
+#splash .polygon,
+#projects .polygon {
+    position: relative;
+    fill: #86C232;
+    display: flex;
+}
+
+#projects .polygon {
+    transform: rotate(180deg);
+    margin-top: -1px;
+}
+
+#splash .polygon svg,
+#projects .polygon svg {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+#aboutme {
+    width: 100%;
+    background-color: #86C232;
+    color: #242424;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about-me-content {
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.about-me-content .left-side {
+    flex: none;
+    overflow: hidden;
+    transform: scale(1.6) skew(45deg);
+}
+
+.about-me-content .left-side img {
+    width: 360px;
+    transform: skew(-45deg) scale(0.6);
+}
+
+.about-me-content .right-side {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.about-me-content .right-side h2 {
+    margin: 0;
+    font-family: fm-bold;
+    font-size: 2em;
+}
+
+.about-me-content .right-side p {
+    margin: 0;
+    font-size: 0.8em;
+    font-family: fm-bold;
+    text-align: justify;
+}
+
+#projects {
+    min-height: 1000px;
+}
+
+#projects .main-title {
+    text-align: center;
+    font-size: 2em;
+}
+
+#projects .projects-container {
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sub-title-container {
+    display: flex;
+    width: 100%;
+    border-bottom: 3px solid #86C232;
+}
+
+.sub-title-container h2 {
+    margin: 0;
+}
+
+.sub-title-container .triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 28px solid #86c232;
+    border-left: 28px solid transparent;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.sub-title-container .rectangle {
+    height: 28px;
+    width: 15px;
+    background-color: #86C232;
+    margin: auto;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.card-container {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    margin: auto;
+    height: 423px;
+    margin-bottom: 20px;
+}
+
+.card .image {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    margin-top: 200px;
+    background-image: url(https://stephenmiller.hu/development/img/project2.jpg);
+    border-radius: 10px 10px 0px 0px;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s all ease-in-out;
+}
+
+.card .content {
+    transition: 0.5s all ease-in-out;
+    margin-top: -200px;
+}
+
+.card .content .rectangle-container {
+    width: 100%;
+    height: 15px;
+    display: flex;
+}
+
+.card .content .rectangle-container .triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid #181818;
+    border-left: 15px solid transparent;
+}
+
+.card .content .rectangle-container .rectangle {
+    width: 100%;
+    height: 15px;
+    background-color: #181818;
+}
+
+.card .content .text-bg {
+    width: 100%;
+    height: 220px;
+    background-color: #181818;
+    border-bottom: 3px solid #86C232;
+}
+
+.card .content .texts {
+    margin-top: -230px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .content .texts h2 {
+    margin: 0;
+}
+
+.card .content .texts p {
+    text-align: justify;
+}
+
+.card .content a {
+    display: block;
+    margin-top: auto;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-family: fm-bold;
+    color: #979797;
+    font-size: 0.8em;
+    width: max-content;
+    transition: 0.2s all ease-in-out;
+}
+
+.card .content a:hover {
+    color: #86C232;
+}
