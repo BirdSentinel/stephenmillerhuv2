@@ -148,6 +148,7 @@ body {
 #projects .main-title {
     text-align: center;
     font-size: 2em;
+    margin-bottom: 0;
 }
 
 #projects .projects-container {
@@ -161,6 +162,7 @@ body {
     display: flex;
     width: 100%;
     border-bottom: 3px solid #86C232;
+    margin-top: 15px;
 }
 
 .sub-title-container h2 {
@@ -207,7 +209,7 @@ body {
     background-image: url(https://stephenmiller.hu/development/img/project2.jpg);
     border-radius: 10px 10px 0px 0px;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     transition: 0.5s all ease-in-out;
 }
 

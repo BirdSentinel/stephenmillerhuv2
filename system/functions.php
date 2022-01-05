@@ -10,9 +10,11 @@ function cardDraw(string $cardClass, string $image, string $title, string $desc,
             <div class=\"text-bg\"></div>
             <div class=\"texts\">
                 <h2>$title</h2>
-                <p>$desc</p>
-                <a href=\"$link\">$linkname</a>
-            </div>
+                <p>$desc</p>";
+                if (mb_strlen($link) > 2) {
+                    echo "<a target=\"_blank\" href=\"$link\">$linkname</a>";
+                }
+            echo "</div>
         </div>
     </div>";
 }
