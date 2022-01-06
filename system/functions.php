@@ -19,9 +19,31 @@ function cardDraw(string $cardClass, string $image, string $title, string $desc,
     </div>";
 }
 
-function cardTitle(string $name) {
-    echo "<div class=\"sub-title-container\">
+function photoDraw(string $link) {
+    echo "<div class=\"photo\" style=\"background-image:url($link)\"></div>";
+}
+
+function cardTitle(string $name, string $class) {
+    echo "<div class=\"sub-title-container $class\">
         <h2>$name</h2><div class=\"triangle\"></div><div class=\"rectangle\"></div>
     </div>";
+}
+
+function createCardSection(string $title, string $class, $cards) {
+    cardTitle($title, $class);
+
+    if (count($cards) % 3 == 0) {
+        echo "<div class=\"card-container\">";
+    } else if (count($cards) % 3 == 1) {
+        echo "<div class=\"card-container last-one\">";
+    } else if (count($cards) % 3 == 2) {
+        echo "<div class=\"card-container last-two\">";
+    }
+
+    for ($i = 0; $i < count($cards); $i++) {
+        cardDraw($cards[$i]["cardClass"], $cards[$i]["image"], $cards[$i]["title"], $cards[$i]["desc"], $cards[$i]["link"], $cards[$i]["linkname"]);
+    }
+
+    echo "</div>";
 }
 ?>

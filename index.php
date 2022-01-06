@@ -38,7 +38,7 @@ include_once("system/functions.php");
                     </div>
                     <div class="right-side">
                         <h2 id="about_me_text">About me</h2>
-                        <p>I'm a 24 year old guy from Hungary, who is a maniac video game console collector and game modder. I have my own video game, called CandyVenture! I'm currently a Front-End Developer, but I always love to learn new things. Besides programming I love to do photography and graphical stuff.</p>
+                        <p>I'm a 24 year old guy from Hungary, who is a maniac video game console collector and game modder. I have my own video game, called CandyVenture! I'm currently a Front-End Developer, but I always love to learn new things. Besides games I love to do photography and graphical stuff.</p>
                     </div>
                 </div>
                 
@@ -51,23 +51,21 @@ include_once("system/functions.php");
                 </div>
                 <div class="projects-container">
                     <h2 class="main-title">My works</h2>
-
-                    <?php cardTitle("Web development"); ?>
-                    <div class="card-container">
-                        <?php
-                            for ($i = 0; $i < count($webdev_cards); $i++) {
-                                cardDraw($webdev_cards[$i]["cardClass"], $webdev_cards[$i]["image"], $webdev_cards[$i]["title"], $webdev_cards[$i]["desc"], $webdev_cards[$i]["link"], $webdev_cards[$i]["linkname"]);
-                            }
-                        ?>
-                    </div>
-
-                    <?php cardTitle("Programming"); ?>
-                    <div class="card-container">
-                        <?php
-                            for ($i = 0; $i < count($webdev_cards); $i++) {
-                                cardDraw($webdev_cards[$i]["cardClass"], $webdev_cards[$i]["image"], $webdev_cards[$i]["title"], $webdev_cards[$i]["desc"], $webdev_cards[$i]["link"], $webdev_cards[$i]["linkname"]);
-                            }
-                        ?>
+                    <?php
+                        createCardSection("Web development", "webdev", $webdev_cards);
+                        createCardSection("Games", "games", $games_cards);
+                        createCardSection("Other", "other", $other_cards);
+                    ?>
+                    <?php cardTitle("Photography", ""); ?>
+                    <div class="photos-container">
+                        <div class="flexible-photo-container">
+                            <?php
+                                for ($i = 0; $i < count($photo_cards); $i++) {
+                                    photoDraw($photo_cards[$i]["link"]);
+                                }
+                            ?>
+                        </div>
+                        <h2 class="photo-link">View all my photos on <a target="_blank" href="https://500px.com/p/stephenmiller04">500px</a>!</h2>
                     </div>
                 </div>
             </div>

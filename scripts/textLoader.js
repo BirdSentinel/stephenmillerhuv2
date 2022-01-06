@@ -99,7 +99,11 @@ const splash_scramble = () => {
     AsciiMorph.morph(asciis[counter2]);
 }
 
-setTimeout(function(){ scroll_element.setText(scroll_texts[0]); }, 6000);
+setTimeout(function(){
+    if (scrollTop < 200) {
+        scroll_element.setText(scroll_texts[0]);
+    }
+}, 6000);
 
 setTimeout(function(){ splash_scramble(); }, 1500);
 

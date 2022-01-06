@@ -22,10 +22,20 @@ function checkVisible(elm) {
     return !(rect.bottom < 0 || rect.top - viewHeight + 400 >= 0);
 }
 
-var webdev_section = document.getElementsByClassName("sub-title-container")[0];
+var webdev_section = document.getElementsByClassName("sub-title-container webdev")[0];
+var games_section = document.getElementsByClassName("sub-title-container games")[0];
+var other_section = document.getElementsByClassName("sub-title-container other")[0];
+var scrollTop;
 
 window.onscroll = function () {
+    scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
     if (checkVisible(webdev_section)) {
         cardLoop("card webdev", 0);
+    }
+    if (checkVisible(games_section)) {
+        cardLoop("card game", 0);
+    }
+    if (checkVisible(other_section)) {
+        cardLoop("card other", 0);
     }
 };
