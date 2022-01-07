@@ -26,7 +26,7 @@ include_once("system/functions.php");
                 </div>
                 <p class="scroll-down-text" id="scroll-down-text"></p>
                 <div class="polygon">
-                    <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5">
+                    <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5" preserveAspectRatio="xMinYMin none">
                         <polygon points="0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 "></polygon>
                     </svg>
                 </div>
@@ -56,14 +56,31 @@ include_once("system/functions.php");
                         createCardSection("Games", "games", $games_cards);
                         createCardSection("Other", "other", $other_cards);
                     ?>
-                    <?php cardTitle("Photography", ""); ?>
+                    <?php sectionTitle("Photography", ""); ?>
                     <div class="photos-container">
                         <div class="flexible-photo-container">
-                            <?php
-                                for ($i = 0; $i < count($photo_cards); $i++) {
-                                    photoDraw($photo_cards[$i]["link"]);
-                                }
-                            ?>
+                            <div class="left-side">
+                                <div class="photos-box-1x2">
+                                    <div class="big-picture" style="background-image: url(img/photos/photo1.jpg)"></div>
+                                    <div class="right-pictures">
+                                        <div class="photo" style="background-image: url(img/photos/photo2.jpg)"></div>
+                                        <div class="photo" style="background-image: url(img/photos/photo3.jpg)"></div>
+                                    </div>
+                                </div>
+                                <div class="landscape-photos">
+                                    <div class="photo" style="background-image: url(img/photos/photo6.jpg)"></div>
+                                    <div class="photo" style="background-image: url(img/photos/photo5.jpg)"></div>
+                                </div>
+                            </div>
+                            <div class="right-side">
+                                <div class="half-photo" style="background-image: url(img/photos/photo4.jpg)"></div>
+                                <div class="full-photo" style="background-image: url(img/photos/photo7.jpg)"></div>
+                                <div class="half-photo" style="background-image: url(img/photos/photo8.jpg)"></div>
+                            </div>
+                        </div>
+                        <div class="bottom-side">
+                            <div class="half-photo" style="background-image: url(img/photos/photo10.jpg)"></div>
+                            <div class="full-photo" style="background-image: url(img/photos/photo9.jpg)"></div>
                         </div>
                         <h2 class="photo-link">View all my photos on <a target="_blank" href="https://500px.com/p/stephenmiller04">500px</a>!</h2>
                     </div>

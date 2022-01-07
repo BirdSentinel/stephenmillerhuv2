@@ -23,14 +23,14 @@ function photoDraw(string $link) {
     echo "<div class=\"photo\" style=\"background-image:url($link)\"></div>";
 }
 
-function cardTitle(string $name, string $class) {
+function sectionTitle(string $name, string $class) {
     echo "<div class=\"sub-title-container $class\">
         <h2>$name</h2><div class=\"triangle\"></div><div class=\"rectangle\"></div>
     </div>";
 }
 
 function createCardSection(string $title, string $class, $cards) {
-    cardTitle($title, $class);
+    sectionTitle($title, $class);
 
     if (count($cards) % 3 == 0) {
         echo "<div class=\"card-container\">";
