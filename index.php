@@ -26,9 +26,9 @@ include_once("system/functions.php");
                 </div>
                 <p class="scroll-down-text" id="scroll-down-text"></p>
                 <div class="polygon">
-                    <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5" preserveAspectRatio="xMinYMin none">
-                        <polygon points="0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 "></polygon>
-                    </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 186 1920 113">
+                    <polygon points="0,300 655,210 1432,300 1920,198 1920,300 "></polygon>
+                </svg>
                 </div>
             </div>
             <div id="aboutme">
