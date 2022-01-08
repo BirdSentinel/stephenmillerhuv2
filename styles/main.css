@@ -144,6 +144,11 @@ body {
     font-size: 0.8em;
     font-family: fm-bold;
     text-align: justify;
+    line-height: 1.3em;
+}
+
+.about-me-content .right-side p a {
+    color: #242424;
 }
 
 #projects {
@@ -491,7 +496,7 @@ body {
 }
 
 .full-screen-item-picture-modal .loading-circle {
-    border: 5px solid #ffffff3b;
+    border: 5px solid #ffffff4a;
     border-left: 5px solid transparent;
     border-radius: 100%;
     width: 50px;
@@ -617,6 +622,26 @@ body {
     }
 }
 
+@media (max-width: 620px) {
+    .about-me-content {
+        display: block;
+    }
+
+    .about-me-content .left-side img {
+        width: 100%;
+        margin: auto;
+    }
+
+    .about-me-content .left-side {
+        display: flex;
+        transform: scale(1.4) skew(45deg);
+    }
+
+    .about-me-content .right-side {
+        margin-left: 0;
+    }
+}
+
 @media (max-width: 600px) {
     .photos-container .flexible-photo-container {
         flex-direction: column;
@@ -655,25 +680,5 @@ body {
     .footer-center-content .footer-links {
         margin: auto;
         width: max-content;
-    }
-}
-
-@media (max-width: 510px) {
-    .about-me-content {
-        display: block;
-    }
-
-    .about-me-content .left-side img {
-        width: 100%;
-        margin: auto;
-    }
-
-    .about-me-content .left-side {
-        display: flex;
-        transform: scale(1.4) skew(45deg);
-    }
-
-    .about-me-content .right-side {
-        margin-left: 0;
     }
 }

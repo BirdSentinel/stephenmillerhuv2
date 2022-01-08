@@ -43,7 +43,7 @@ include_once("system/functions.php");
                     </div>
                     <div class="right-side">
                         <h2 id="about_me_text">About me</h2>
-                        <p>I'm a 24 year old guy from Hungary, who is a maniac video game console collector and game modder. I have my own video game, called CandyVenture! I'm currently a Front-End Developer, but I always love to learn new things. Besides games I love to do photography and graphical stuff.</p>
+                        <p>I'm a 25 year old guy from Hungary, who is a maniac video game console collector and game modder. I have my own video game, called <a target="_blank" href="https://store.steampowered.com/app/987800/CandyVenture/">CandyVenture</a>! I'm currently a Full-Stack Developer, but I always love to learn new things. Besides programming I love to do photography and graphical stuff. To see my works, scroll down. Wanna learn web development? Check out <a target="_blank" href="https://univershitty.hu/">Univershitty</a>! Also you might want to check out my <a target="_blank" href="https://github.com/stephenmiller04">Github</a> profile for some cool stuff, like <i>this</i> page's source code!</p>
                     </div>
                 </div>
             </div>
