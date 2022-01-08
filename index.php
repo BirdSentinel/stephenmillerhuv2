@@ -92,7 +92,17 @@ include_once("system/functions.php");
                     </svg>
                 </div>
                 <div class="footer-content">
-                    
+                    <div class="footer-center-content">
+                        <img class="fox-logo" src="img/icons/foxlogo.svg"/>
+                        <p class="footer-text">© <script type="text/javascript">document.write(new Date().getFullYear());</script> Stephen Miller</p>
+                        <div class="footer-links">
+                            <a target="_blank" href="https://github.com/stephenmiller04"><img src="img/icons/github.svg"/></a>
+                            <a target="_blank" href="https://instagram.com/stephenmiller04"><img src="img/icons/instagram.svg"/></a>
+                            <a target="_blank" href="https://500px.com/stephenmiller04"><img src="img/icons/500px.svg"/></a>
+                            <a target="_blank" href="https://youtube.com/c/StephenMiller04"><img src="img/icons/youtube.svg"/></a>
+                            <a href="mailto:stephenmiller997@gmail.com"><img src="img/icons/envelope.svg"/></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

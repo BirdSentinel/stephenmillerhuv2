@@ -420,12 +420,45 @@ body {
     margin-bottom: 0;
     width: 100%;
     height: 100%;
-    transform: scaleX(1.05);
 }
 
 .footer-content {
-    min-height: 120px;
     background-color: #86C232;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer-center-content {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-center-content .footer-text {
+    color: #242424;
+    font-family: 'fm-bold';
+    margin-left: 12px;
+    font-size: 0.8em;
+}
+
+.footer-center-content .fox-logo {
+    width: 46px;
+}
+
+.footer-center-content .footer-links {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.footer-center-content .footer-links a img {
+    height: 46px;
+    transition: 0.2s all ease-in-out;
+}
+
+.footer-center-content .footer-links a:hover img {
+    filter: brightness(1.7);
 }
 
 @media (max-width: 1030px) {
@@ -529,6 +562,25 @@ body {
     .photos-container .flexible-photo-container .right-side .full-photo {
         width: 50%;
         float: right;
+    }
+
+    .footer-center-content {
+        display: block;
+    }
+
+    .footer-center-content .fox-logo {
+        margin: auto;
+        display: block;
+        width: 90px;
+    }
+
+    .footer-center-content .footer-text {
+        text-align: center;
+    }
+
+    .footer-center-content .footer-links {
+        margin: auto;
+        width: max-content;
     }
 }
 
