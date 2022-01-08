@@ -285,6 +285,7 @@ body {
 .card .content .texts p {
     text-align: justify;
     margin-bottom: auto;
+    margin-top: 5px;
 }
 
 .card .content a {
