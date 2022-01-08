@@ -13,7 +13,7 @@ include_once("system/functions.php");
         <link rel="icon" href="favicon.ico">
         <meta property="og:title" content="Stephen Miller">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="https://stephenmiller.hu/v2/img/webdev/small/stephenmillerhuv3.jpg">
+        <meta property="og:image" content="https://stephenmiller.hu/v2/img/ograph.jpg">
         <meta property="og:author" content="Stephen Miller">
         <meta property="og:description" content="Welcome to my personal site! My name is Stephen Miller. I'm a software developer, but I also do graphical stuff, making games and photography.">
     </head>
