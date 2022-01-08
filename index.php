@@ -112,6 +112,7 @@ include_once("system/functions.php");
             </div>
         </div>
         <div id="picture_modal" class="full-screen-item-picture-modal" style="display: none;">
+            <span class="loading-circle"></span>
             <img class="modal-img" id="modalimg" src="https://www.vulkancapa.hu/img/marketplace/17/item1.jpg">
         </div>
     </body>
