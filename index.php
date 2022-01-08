@@ -11,6 +11,11 @@ include_once("system/functions.php");
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="favicon.ico">
+        <meta property="og:title" content="Stephen Miller">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="img/webdev/small/stephenmillerv3.jpg">
+        <meta property="og:author" content="Stephen Miller">
+        <meta property="og:description" content="Welcome to my personal site! My name is Stephen Miller. I'm a software developer, but I also do graphical stuff, making games and photography.">
     </head>
     <body>
         <canvas id="matrixbg"></canvas>
