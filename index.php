@@ -86,12 +86,13 @@ include_once("system/functions.php");
                 </div>
             </div>
             <div id="footer">
+                <div class="polygon">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 186 1920 113">
+                        <polygon points="0,300 655,210 1432,300 1920,198 1920,300 "></polygon>
+                    </svg>
+                </div>
                 <div class="footer-content">
-                    <div class="polygon">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 186 1920 113">
-                            <polygon points="0,300 655,210 1432,300 1920,198 1920,300 "></polygon>
-                        </svg>
-                    </div>
+                    
                 </div>
             </div>
         </div>
