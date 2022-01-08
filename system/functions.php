@@ -1,7 +1,7 @@
 <?php
-function cardDraw(string $cardClass, string $image, string $title, string $desc, string $link, string $linkname) {
+function cardDraw(string $cardClass, string $image, string $fullimage, string $title, string $desc, string $link, string $linkname) {
     echo "<div class=\"card $cardClass\">
-        <div class=\"image\" style=\"background-image: url($image)\"></div>
+        <div class=\"image\" data-picture=\"$fullimage\" style=\"background-image: url($image)\"></div>
         <div class=\"content\">
             <div class=\"rectangle-container\">
                 <div class=\"triangle\"></div>
@@ -41,7 +41,7 @@ function createCardSection(string $title, string $class, $cards) {
     }
 
     for ($i = 0; $i < count($cards); $i++) {
-        cardDraw($cards[$i]["cardClass"], $cards[$i]["image"], $cards[$i]["title"], $cards[$i]["desc"], $cards[$i]["link"], $cards[$i]["linkname"]);
+        cardDraw($cards[$i]["cardClass"], $cards[$i]["image"], $cards[$i]["fullimage"], $cards[$i]["title"], $cards[$i]["desc"], $cards[$i]["link"], $cards[$i]["linkname"]);
     }
 
     echo "</div>";

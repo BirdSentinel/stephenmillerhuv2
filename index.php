@@ -60,26 +60,26 @@ include_once("system/functions.php");
                         <div class="flexible-photo-container">
                             <div class="left-side">
                                 <div class="photos-box-1x2">
-                                    <div class="big-picture" style="background-image: url(img/photos/photo1.jpg)"></div>
+                                    <div name="photo" data-photo="img/photos/photo1.jpg" class="big-picture" style="background-image: url(img/photos/photo1.jpg)"></div>
                                     <div class="right-pictures">
-                                        <div class="photo" style="background-image: url(img/photos/photo2.jpg)"></div>
-                                        <div class="photo" style="background-image: url(img/photos/photo3.jpg)"></div>
+                                        <div name="photo" data-photo="img/photos/photo2.jpg" class="photo" style="background-image: url(img/photos/photo2.jpg)"></div>
+                                        <div name="photo" data-photo="img/photos/photo3.jpg" class="photo" style="background-image: url(img/photos/photo3.jpg)"></div>
                                     </div>
                                 </div>
                                 <div class="landscape-photos">
-                                    <div class="photo" style="background-image: url(img/photos/photo6.jpg)"></div>
-                                    <div class="photo" style="background-image: url(img/photos/photo5.jpg)"></div>
+                                    <div name="photo" data-photo="img/photos/photo6.jpg" class="photo" style="background-image: url(img/photos/photo6.jpg)"></div>
+                                    <div name="photo" data-photo="img/photos/photo5.jpg" class="photo" style="background-image: url(img/photos/photo5.jpg)"></div>
                                 </div>
                             </div>
                             <div class="right-side">
-                                <div class="half-photo" style="background-image: url(img/photos/photo4.jpg)"></div>
-                                <div class="full-photo" style="background-image: url(img/photos/photo7.jpg)"></div>
-                                <div class="half-photo" style="background-image: url(img/photos/photo8.jpg)"></div>
+                                <div name="photo" data-photo="img/photos/photo4.jpg" class="half-photo" style="background-image: url(img/photos/photo4.jpg)"></div>
+                                <div name="photo" data-photo="img/photos/photo7.jpg" class="full-photo" style="background-image: url(img/photos/photo7.jpg)"></div>
+                                <div name="photo" data-photo="img/photos/photo8.jpg" class="half-photo" style="background-image: url(img/photos/photo8.jpg)"></div>
                             </div>
                         </div>
                         <div class="bottom-side">
-                            <div class="half-photo" style="background-image: url(img/photos/photo10.jpg)"></div>
-                            <div class="full-photo" style="background-image: url(img/photos/photo9.jpg)"></div>
+                            <div name="photo" data-photo="img/photos/photo10.jpg" class="half-photo" style="background-image: url(img/photos/photo10.jpg)"></div>
+                            <div name="photo" data-photo="img/photos/photo9.jpg" class="full-photo" style="background-image: url(img/photos/photo9.jpg)"></div>
                         </div>
                         <h2 class="photo-link">View all my photos on <a target="_blank" href="https://500px.com/p/stephenmiller04">500px</a>!</h2>
                     </div>
@@ -106,10 +106,14 @@ include_once("system/functions.php");
                 </div>
             </div>
         </div>
+        <div id="picture_modal" class="full-screen-item-picture-modal" style="display: none;">
+            <img class="modal-img" id="modalimg" src="https://www.vulkancapa.hu/img/marketplace/17/item1.jpg">
+        </div>
     </body>
     <script src="scripts/asciiMorph.js"></script>
     <script src="scripts/asciiArts.js"></script>
     <script src="scripts/background.js"></script>
     <script src="scripts/textLoader.js"></script>
+    <script src="scripts/picturePreview.js"></script>
     <script src="scripts/base.js"></script>
 </html>

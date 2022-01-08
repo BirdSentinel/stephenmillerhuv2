@@ -227,13 +227,13 @@ body {
     margin-top: 200px;
     background-image: url(https://stephenmiller.hu/development/img/project2.jpg);
     border-radius: 10px 10px 0px 0px;
-    background-size: 120%;
+    background-size: 100%;
     background-position: center top;
     transition: 0.5s all ease-in-out;
 }
 
 .card .image:hover {
-    background-size: 130%;
+    background-size: 103%;
     cursor: pointer;
 }
 
@@ -343,6 +343,18 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center;
+    transition: 0.2s all ease-in-out;
+}
+
+.photos-container .flexible-photo-container .left-side .photos-box-1x2 .big-picture:hover,
+.photos-container .flexible-photo-container .left-side .photos-box-1x2 .right-pictures .photo:hover,
+.photos-container .flexible-photo-container .left-side .landscape-photos .photo:hover,
+.photos-container .flexible-photo-container .right-side .half-photo:hover,
+.photos-container .flexible-photo-container .right-side .full-photo:hover,
+.photos-container .bottom-side .full-photo:hover,
+.photos-container .bottom-side .half-photo:hover {
+    cursor: pointer;
+    transform: scale(1.03);
 }
 
 .photos-container .flexible-photo-container .left-side .photos-box-1x2 .right-pictures {
@@ -356,6 +368,7 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center;
+    transition: 0.2s all ease-in-out;
 }
 
 .photos-container .flexible-photo-container .left-side .landscape-photos {
@@ -369,6 +382,7 @@ body {
     width: 100%;
     background-size: cover;
     background-position: center;
+    transition: 0.2s all ease-in-out;
 }
 
 .photos-container .flexible-photo-container .right-side {
@@ -382,6 +396,7 @@ body {
     height: 250px;
     background-size: cover;
     background-position: center;
+    transition: 0.2s all ease-in-out;
 }
 
 .photos-container .flexible-photo-container .right-side .full-photo {
@@ -389,6 +404,7 @@ body {
     height: 500px;
     background-size: cover;
     background-position: center;
+    transition: 0.2s all ease-in-out;
 }
 
 .photos-container .bottom-side {
@@ -400,6 +416,7 @@ body {
     height: 250px;
     background-size: cover;
     background-position: center;
+    transition: 0.2s all ease-in-out;
 }
 
 .photos-container .bottom-side .half-photo {
@@ -407,6 +424,7 @@ body {
     height: 250px;
     background-size: cover;
     background-position: center;
+    transition: 0.2s all ease-in-out;
 }
 
 #footer .polygon {
@@ -459,6 +477,28 @@ body {
 
 .footer-center-content .footer-links a:hover img {
     filter: brightness(1.7);
+}
+
+.full-screen-item-picture-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.full-screen-item-picture-modal:hover {
+    cursor: pointer;
+}
+
+.full-screen-item-picture-modal .modal-img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 @media (max-width: 1030px) {
