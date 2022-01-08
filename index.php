@@ -13,7 +13,7 @@ include_once("system/functions.php");
         <link rel="icon" href="favicon.ico">
         <meta property="og:title" content="Stephen Miller">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="img/webdev/small/stephenmillerv3.jpg">
+        <meta property="og:image" content="https://stephenmiller.hu/v2/img/webdev/small/stephenmillerhuv3.jpg">
         <meta property="og:author" content="Stephen Miller">
         <meta property="og:description" content="Welcome to my personal site! My name is Stephen Miller. I'm a software developer, but I also do graphical stuff, making games and photography.">
     </head>
@@ -43,7 +43,7 @@ include_once("system/functions.php");
                     </div>
                     <div class="right-side">
                         <h2 id="about_me_text">About me</h2>
-                        <p>I'm a 25 year old guy from Hungary, who is a maniac video game console collector and game modder. I have my own video game, called <a target="_blank" href="https://store.steampowered.com/app/987800/CandyVenture/">CandyVenture</a>! I'm currently a Full-Stack Developer, but I always love to learn new things. Besides programming I love to do photography and graphical stuff. To see my works, scroll down. Wanna learn web development? Check out <a target="_blank" href="https://univershitty.hu/">Univershitty</a>! Also you might want to check out my <a target="_blank" href="https://github.com/stephenmiller04">Github</a> profile for some cool stuff, like <i>this</i> page's source code!</p>
+                        <p>I'm a <script type="text/javascript">document.write(Number(new Date().getFullYear().toString().substr(-2))+3);</script> year old guy from Hungary, who is a maniac video game console collector and game modder. I have my own video game, called <a target="_blank" href="https://store.steampowered.com/app/987800/CandyVenture/">CandyVenture</a>! I'm currently a Full-Stack Developer, but I always love to learn new things. Besides programming I love to do photography and graphical stuff. To see my works, scroll down. Wanna learn web development? Check out <a target="_blank" href="https://univershitty.hu/">Univershitty</a>! Also you might want to check out my <a target="_blank" href="https://github.com/stephenmiller04">Github</a> profile for some cool stuff, like <i>this</i> page's source code!</p>
                     </div>
                 </div>
             </div>

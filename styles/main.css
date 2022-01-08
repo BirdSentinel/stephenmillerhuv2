@@ -121,6 +121,7 @@ body {
     flex: none;
     overflow: hidden;
     transform: scale(1.6) skew(45deg);
+    pointer-events: none;
 }
 
 .about-me-content .left-side img {
