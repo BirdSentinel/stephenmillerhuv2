@@ -26,9 +26,9 @@ include_once("system/functions.php");
                 </div>
                 <p class="scroll-down-text" id="scroll-down-text"></p>
                 <div class="polygon">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 186 1920 113">
-                    <polygon points="0,300 655,210 1432,300 1920,198 1920,300 "></polygon>
-                </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 186 1920 113">
+                        <polygon points="0,300 655,210 1432,300 1920,198 1920,300 "></polygon>
+                    </svg>
                 </div>
             </div>
             <div id="aboutme">
@@ -41,7 +41,6 @@ include_once("system/functions.php");
                         <p>I'm a 24 year old guy from Hungary, who is a maniac video game console collector and game modder. I have my own video game, called CandyVenture! I'm currently a Front-End Developer, but I always love to learn new things. Besides games I love to do photography and graphical stuff.</p>
                     </div>
                 </div>
-                
             </div>
             <div id="projects">
                 <div class="polygon">
@@ -83,6 +82,15 @@ include_once("system/functions.php");
                             <div class="full-photo" style="background-image: url(img/photos/photo9.jpg)"></div>
                         </div>
                         <h2 class="photo-link">View all my photos on <a target="_blank" href="https://500px.com/p/stephenmiller04">500px</a>!</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div class="footer-content">
+                    <div class="polygon">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 186 1920 113">
+                            <polygon points="0,300 655,210 1432,300 1920,198 1920,300 "></polygon>
+                        </svg>
                     </div>
                 </div>
             </div>
