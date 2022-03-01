@@ -103,10 +103,10 @@ $webdev_cards = array(
 $games_cards = array(
     array(
         "cardClass"=>"game",
-        "image"=>"img/games/small/revolt.jpg",
-        "fullimage"=>"img/games/full/revolt.jpg",
-        "title"=>"Re-Volt (Vulkán Edition)",
-        "desc"=>"Re-Volt is still my favorite racing game since my childhood. Since the game's source code was leaked,I have the opportunity to mod my old ideas to the game, like a better menu, better UI, more songs etc... <b>[In progress]</b>",
+        "image"=>"img/games/small/torque.jpg",
+        "fullimage"=>"img/games/full/torque.jpg",
+        "title"=>"Torque - RC Madness",
+        "desc"=>"RC Racing game, more details coming soon... <b>[In progress]</b>",
         "link"=>"",
         "linkname"=>""),
     array(
